@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encrypt&Decrypt</title>
+</head>
+<body>
+    <div class="content">
+        <div class="title-div">
+            <h1>Encryption and Decryption</h1>
+            <p>Write a message and Encrypt and Decrypt using the algorithms provided.</p>
+        </div>
+        <div class="input-output">
+
+            <div class="input-div">
+                <form>
+                    <div class="key-div">
+                        <label>KEY:   </label>
+                        <input type="text" name="key" id="key" placeholder="Secret key here...">
+                    </div>
+                    <br>
+                    <div class="text-div">
+                        <label for="text">Enter the text you want to encrypt:</label>
+                        <br>
+                        <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                        <button type="button" class="" id="paste">Paste</button>
+                    </div>
+                    <br>
+                    <div class="algo-task-div">
+                        <select name="" id="">
+                            <option value="AES">AES</option>
+                            <option value="DES">DES</option>
+                            <option value="3DES">3DES</option>
+                            <option value="OTP">OTP</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="Encrypt">Encrypt</option>
+                            <option value="Decrypt">Decrypt</option>
+                        </select>
+                    </div>
+                    <br>
+                    
+                    <button class="submit_button" type="submit" id="submit">Encrypt</button>
+                </form> 
+
+            </div>
+            <div class="output-div">
+                <div class="display-div">
+                    <h3>Output shows:</h3>
+                    <p>...</p>
+                </div>
+                <button>Copy</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
