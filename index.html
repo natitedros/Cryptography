@@ -11,32 +11,32 @@
     <div class="content">
         <div class="title-div">
             <h1>Encryption and Decryption</h1>
-            <p>Write a message and Encrypt and Decrypt using the algorithms provided.</p>
+            <p>Write a message to Encrypt and Decrypt using the algorithms provided.</p>
         </div>
         <div class="input-output">
 
             <div class="input-div">
-                <form>
+                <form id="cryptForm">
                     <div class="key-div">
                         <label>KEY:   </label>
                         <input type="text" name="key" id="key" placeholder="Secret key here...">
                     </div>
                     <br>
                     <div class="text-div">
-                        <label for="text">Enter the text you want to encrypt:</label>
-                        <br>
-                        <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                        <button type="button" class="" id="paste">Paste</button>
+                        <label >Enter the text you want to encrypt:</label>
+                        <textarea name="text" id="text" cols="30" rows="10"></textarea> 
                     </div>
+                    <button type="button" class="" id="paste">Paste</button>
+                    <br>
                     <br>
                     <div class="algo-task-div">
-                        <select name="" id="">
+                        <select name="" id="algorithm">
                             <option value="AES">AES</option>
                             <option value="DES">DES</option>
                             <option value="3DES">3DES</option>
                             <option value="OTP">OTP</option>
                         </select>
-                        <select name="" id="">
+                        <select name="" id="crypt">
                             <option value="Encrypt">Encrypt</option>
                             <option value="Decrypt">Decrypt</option>
                         </select>
@@ -50,13 +50,17 @@
             <div class="output-div">
                 <div class="display-div">
                     <h3>Output shows:</h3>
-                    <p>...</p>
+                    <textarea readonly name="result" id="result" cols="30" rows="10">.....</textarea>
                 </div>
-                <button>Copy</button>
+                <button id="copy">Copy</button>
+                <p  class="text-div" id="warning"></p>
             </div>
 
         </div>
     </div>
 
+    <script src="./onetimepad.js"></script>
+    <script src="./crypto-js.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

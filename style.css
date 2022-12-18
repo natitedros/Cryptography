@@ -43,7 +43,11 @@ html {
     justify-content: space-around;
 }
 .submit_button{
-    align-self: center;
+    width: 90%;
+    height: 25pt;
+    font-size: medium;
+    margin: 3px auto;
+    border-radius: 0.7rem;
 }
 .output-div{
     padding:20px;
