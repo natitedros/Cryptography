@@ -5,9 +5,6 @@ function encrypt(key, plaintext, algorithm) {
         case "AES":
             output = CryptoJS.AES.encrypt(plaintext, key)
             break
-        case "DES":
-            output = CryptoJS.DES.encrypt(plaintext, key)
-            break
         case "3DES":
             output = CryptoJS.TripleDES.encrypt(plaintext, key)
             break
@@ -30,9 +27,6 @@ function decrypt(key, cyphertext, algorithm) {
     switch (algorithm.value) {
         case "AES":
             output = CryptoJS.AES.decrypt(cyphertext, key).toString(CryptoJS.enc.Utf8)
-            break
-        case "DES":
-            output = CryptoJS.DES.decrypt(cyphertext, key).toString(CryptoJS.enc.Utf8)
             break
         case "3DES":
             output = CryptoJS.TripleDES.decrypt(cyphertext, key).toString(CryptoJS.enc.Utf8)
