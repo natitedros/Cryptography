@@ -7,3 +7,4 @@ This is a repo I use for Computer Network Security assignments
 - Then, choose if you want to Encrypt or decrypt the message entered, by the key provided
 - Then press the button at the bottom left
 - Finally, the output will be displayed on the textarea on the right.
+You can use the link above to try it out, or just open `index.html` in a browser.
