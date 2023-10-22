@@ -1,6 +1,6 @@
 # Cryptography
-This is a repo I used for Computer Network Security assignment
-It has a simple POC implementation of the three Symmetric Encryption algorithms, AES, DES, and 3DES
+This is a repo I used for Computer Network Security assignment.
+It has a simple POC implementation of the three Symmetric Encryption algorithms: AES, OTP, and 3DES
 ## Steps:
 - Enter a secret key and the message on the text area provided
 - Choose the type of Encryption Algorithm
